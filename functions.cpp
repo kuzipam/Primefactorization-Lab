@@ -9,6 +9,8 @@ void primefactorization(std::vector<int>& factors, int num, int divisor) {
     if (num % divisor == 0) {
 
         factors.push_back(divisor);
+        //Added a print statement to output the divisors.
+        std::cout << divisor << ' ';
         primefactorization(factors, num / divisor, divisor);
 
     //If not the divisor is incremented to the next.
